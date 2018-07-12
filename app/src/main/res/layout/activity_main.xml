@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/view01"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dragon"
+        />
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/view02"
+        android:background="@drawable/dragon"
+        android:layout_above="@id/view01"
+        android:layout_alignLeft="@id/view01"
+        tools:ignore="RtHardcoded"/>
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/view03"
+        android:background="@drawable/dragon"
+        android:layout_alignLeft="@id/view01"
+        android:layout_below="@id/view01"
+        tools:ignore="RtHardcoded"/>
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/view04"
+        android:background="@drawable/dragon"
+        android:layout_alignTop="@id/view01"
+        android:layout_toRightOf="@id/view01"
+        tools:ignore="RtHardcoded"/>
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/view05"
+        android:background="@drawable/dragon"
+        android:layout_alignTop="@id/view01"
+        android:layout_toLeftOf="@id/view01"
+        tools:ignore="RtHardcoded"/>
+
+
+</RelativeLayout>
